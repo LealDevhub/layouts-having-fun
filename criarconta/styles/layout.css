@@ -7,7 +7,8 @@
 }
 
 main, aside {
-    padding: 4rem;
+    padding-block: 2rem;
+    padding-inline: 4rem;
 }
 
 main {
@@ -68,4 +69,67 @@ aside {
         
     }
         
+}
+
+@media (max-width: 1200px) {
+    body {
+        overflow: auto;
+    }
+
+    #app {
+        display: flex;
+        flex-direction: column-reverse;
+
+        height: 100%;
+    }
+
+    main , aside {
+       overflow: hidden;
+    }
+
+    main .main-container, aside .aside-container {
+        margin-inline: auto;
+    }
+
+    main {
+        .actions-wrapper {
+            flex-direction: column;
+
+            & button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    aside {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .aside-container {
+
+            & h1 {
+                font-size: 2rem;
+            }
+
+            & img.illustration {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-height: 650px) {
+    aside {
+
+        & .aside-container {
+
+            & img.illustration {
+                width: 65%;
+            }
+        }
+    }
 }
