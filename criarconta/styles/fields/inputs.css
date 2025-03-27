@@ -1,14 +1,8 @@
 input, textarea, select {
     all: unset;
-
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-
     appearance: none;
-    -webkit-appearance: none;
-
     width: 100%;
-    -webkit-min-logical-width: calc(100% - 16px);
     padding: .75rem 1rem;
     border-radius: .5rem;
     border: 1px solid var(--stroke-default);
@@ -30,25 +24,6 @@ input[type=file]:focus {
     outline: .25rem solid var(--surface-secondary);
     border: 1px solid var(--stroke-highlight);
     outline-offset: .1px;
-}
-
-input[type=date] {
-    position: relative;
-
-    &::-webkit-calendar-picker-indicator {
-        opacity: 0;
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: 1.5rem;
-        height: 1.5rem;
-        background: url(../../assets/icons/calendar-03.svg);
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-    }
 }
 
 select {
