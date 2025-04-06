@@ -129,13 +129,13 @@
                     <fieldset class="enroll-options">
                         <legend>Opções de matrícula</legend>
 
-                        <div class="input-wrapper">
+                        <div class="input-wrapper study-shift">
                             <label>Selecione o turno de estudo</label>
 
                             <div class="radio-wrapper">
                                 <div class="radio-inner">
                                     <div class="radio-image"></div>
-                                    <input type="radio" name="study-shift" id="morning" value="morning">
+                                    <input type="radio" name="study-shift" id="morning" value="morning" checked>
                                     <img src="assets/icons/sun-cloud-02.svg" alt="Ícone de sol com núvem">
                                     <label for="morning">Manhã</label>
                                 </div>
@@ -147,35 +147,87 @@
                                 </div>
                                 <div class="radio-inner">
                                     <div class="radio-image"></div>
-                                    <input type="radio" name="study-shift" id="evening" value="evening">
+                                    <input type="radio" name="study-shift" id="night" value="night">
                                     <img src="assets/icons/moon-cloud-stroke-rounded 1.svg" alt="Ícone de Noite">
                                     <label for="evening">Noite</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="input-wrapper">
+                        <div class="input-wrapper periods">
                             <label>Em qual horário você gostaria?</label>
 
-                            <div class="radio-wrapper">
-                                <div class="radio-inner">
-                                    <div class="radio-image"></div>
-                                    <input type="radio" name="time" id="time" value="nine">
-                                    <img src="assets/icons/smart-watch-03-stroke-rounded 1.svg" alt="Ícone de Relógio Smart Roxo">
-                                    <label for="nine">09h</label>
+                            <div class="morning-radios">
+                                <div class="radio-wrapper">
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input type="radio" name="time" value="nine">
+                                        <img src="assets/icons/smart-watch-03-stroke-rounded 1.svg" alt="Ícone de Relógio Smart Roxo">
+                                        <label for="nine">09h</label>
+                                    </div>
+    
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input type="radio" name="time" id="ten" value="ten">
+                                        <img src="assets/icons/smart-watch-03-stroke-rounded 2.svg" alt="Ícone de Relógio Smart Laranja">
+                                        <label for="ten">10h</label>
+                                    </div>
+    
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input type="radio" name="time" id="eleven" value="eleven">
+                                        <img src="assets/icons/smart-watch-03-stroke-rounded 3.svg" alt="Ícone de Relógio Smart Cinza">
+                                        <label for="eleven">11h</label>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="radio-inner">
-                                    <div class="radio-image"></div>
-                                    <input type="radio" name="time" id="ten" value="ten">
-                                    <img src="assets/icons/smart-watch-03-stroke-rounded 2.svg" alt="Ícone de Relógio Smart Laranja">
-                                    <label for="ten">10h</label>
+                            <div class="evening-radios">
+                                <div class="radio-wrapper">
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input type="radio" name="time" id="thirteen" value="thirteen">
+                                        <img src="assets/icons/smart-watch-03-stroke-rounded 1.svg" alt="Ícone de Relógio Smart Roxo">
+                                        <label for="thirtenn">13h</label>
+                                    </div>
+    
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input type="radio" name="time" id="fourteen" value="fourteen">
+                                        <img src="assets/icons/smart-watch-03-stroke-rounded 2.svg" alt="Ícone de Relógio Smart Laranja">
+                                        <label for="fourteen">14h</label>
+                                    </div>
+    
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input type="radio" name="time" id="fifteen" value="fifteen">
+                                        <img src="assets/icons/smart-watch-03-stroke-rounded 3.svg" alt="Ícone de Relógio Smart Cinza">
+                                        <label for="fifteen">15h</label>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="radio-inner">
-                                    <div class="radio-image"></div>
-                                    <input type="radio" name="time" id="eleven" value="eleven">
-                                    <img src="assets/icons/smart-watch-03-stroke-rounded 3.svg" alt="Ícone de Relógio Smart Cinza">
-                                    <label for="eleven">11h</label>
+                            <div class="night-radios">
+                                <div class="radio-wrapper">
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input type="radio" name="time" id="seventeen" value="seventeen">
+                                        <img src="assets/icons/smart-watch-03-stroke-rounded 1.svg" alt="Ícone de Relógio Smart Roxo">
+                                        <label for="seventeen">17h</label>
+                                    </div>
+    
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input type="radio" name="time" id="eighteen" value="eighteen">
+                                        <img src="assets/icons/smart-watch-03-stroke-rounded 2.svg" alt="Ícone de Relógio Smart Laranja">
+                                        <label for="eighteen">18h</label>
+                                    </div>
+    
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input type="radio" name="time" id="nineteen" value="nineteen">
+                                        <img src="assets/icons/smart-watch-03-stroke-rounded 3.svg" alt="Ícone de Relógio Smart Cinza">
+                                        <label for="nineteen">19h</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -256,5 +308,7 @@
     
         })
     </script>
+
+    <script src="script.js"></script>
 </body>
 </html>

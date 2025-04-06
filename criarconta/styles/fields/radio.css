@@ -8,6 +8,14 @@ label + .radio-wrapper {
     gap: 1rem; 
 }
 
+.periods label {
+    margin-bottom: 1.5rem;
+}
+
+.evening-radios, .night-radios {
+    display: none;
+}
+
 .radio-inner {
     & input,
     & input:focus,
