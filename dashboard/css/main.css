@@ -1,0 +1,158 @@
+:root {
+  --width-sidebar: 80px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  background-color: #f5e3d7;
+}
+
+.sidebar {
+  width: var(--width-sidebar);
+  background-color: #f9a66c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  position: relative;
+  transition: .3s;
+}
+
+.active {
+  height: 44px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+
+  position: absolute;
+  z-index: 0;
+  top: 53px;
+
+  transition: .4s;
+}
+
+.menu-icon {
+  margin-block: 16px 20px;
+
+  #logo {
+    display: none;
+    width: 0;
+    opacity: 0;
+    transition: .3s;
+  }
+}
+
+.search-icon {
+  padding: 10px;
+}
+
+.search-icon img {
+  width: 20px;
+}
+
+.nav-icons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+  & img {
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.nav-icons img {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-icons img,
+.menu-icon img,
+.logout-icon img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.logout-icon {
+  background-color: #e4cebb;
+  padding-block: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+}
+
+.show {
+  --width-sidebar: 250px;
+  align-items: start;
+
+  .menu-icon {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    #logo {
+      display: block;
+      opacity: 1;
+      margin-left: 14px;
+      width: 50px;
+    }
+
+    #menu {
+      margin-right: 14px;
+    }
+  }
+  
+  & .nav-icons {
+    padding-left: 14px;
+
+    & .icon {
+      height: 44px;
+    }
+  }
+
+  & .nav-icons .icon::after {
+    content: attr(id);
+    color: #d24d3e;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+    
+  }
+
+  & .logout-icon {
+    justify-content: start;
+    & img {
+      margin-left: 14px;
+    }
+  }
+
+  & .active {
+    width: 222px;
+    left: 14px;
+  }
+}
+
+.main-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.main-content h1 {
+  color: #d24d3e;
+  font-size: 24px;
+}
