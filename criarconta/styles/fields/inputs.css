@@ -24,25 +24,6 @@ input[type=file]:focus {
     outline-offset: .1px;
 }
 
-input[type=date] {
-    position: relative;
-
-    &::-webkit-calendar-picker-indicator {
-        opacity: 0;
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: 1.5rem;
-        height: 1.5rem;
-        background: url(../../assets/icons/calendar-03.svg);
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-
 select {
     background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
 }

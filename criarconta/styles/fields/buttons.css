@@ -17,6 +17,7 @@ button {
 .btn-primary {
     color: var(--surface-primary);
     background-color: #E43A12;
+    border: 1px solid var(--text-highlight);
 
     &:hover {
         background-color: #F3541C;
